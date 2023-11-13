@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Form Javascript</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" class="form">
+            <div class="title">
+                <h3>Create a new account</h3>
+            </div>
+
+            <div>
+                <label for="fname" class="label">Nome</label>
+                <input type="text" class="fcontainer" id="name" name="name" placeholder="Mario">
+                <span id="name-error-message" class="error"></span>
+            </div>
+
+            <div>
+                <label for="fname" class="label">Cognome</label>
+                <input type="text" class="fcontainer" id="lastname" name="lastname" placeholder="Rossi">
+                <span id="lastname-error-message" class="error"></span>
+            </div>
+
+            <div>
+                <label for="fname" class="label">Username</label>
+                <input type="text" class="fcontainer" id="username" name="uername" placeholder="MarioRossi89">
+                <span id="username-error-message" class="error"></span>
+            </div>
+
+            <div>
+                <label for="fname" class="label">Città</label>
+                <input type="text" class="fcontainer" id="city" name="city" placeholder="Roma">
+                <span id="city-error-messagge" class="error"></span>
+            </div>
+
+            <div>
+                <label for="fname" class="label">Email</label>
+                <input type="email" class="fcontainer" id="email" name="email" placeholder="test@test.com">
+                <span id="email-error-message" class="error"></span>
+            </div>
+
+            <div>
+                <label for="ftel" class="label">Telefono</label>
+                <input type="tel" class="fcontainer" id="tel" name="tel" placeholder="041 5899789">
+                <span id="tel-error-message" class="error"></span>
+            </div>
+
+            <div>
+                <label for="pwd" class="label">Password</label>
+                <input type="password" class="fcontainer" id="pwd" name="pwd" minlength="8">
+                <span id="pwd-error-message" class="error"></span>
+            </div>
+
+            <div>
+                <label for="pwd" class="label">Password Confirmation</label>
+                <input type="password" class="fcontainer" id="pwd" name="pwd" minlength="8">
+                <span id="pwd-error-message" class="error"></span>
+            </div>
+
+            <input type="submit" class="submit" value="Create account">
+        </form>
+    </div>
+
+</body>
+
+</html>
