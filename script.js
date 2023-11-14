@@ -1,45 +1,32 @@
 // Attende il caricamento del DOM
 document.addEventListener("DOMContentLoaded", function () {
-
-    //Code...
-
     //Selettore per il form
     const form = document.querySelector('.form');
-    const campiObbligatori = ['name','lastaname','username'];
+    const campiObbligatori = ['name', 'lastname', 'username'];
     console.log(form);
 
-    for(const element of campiObbligatori){
-        /*nome = "name: " + form;
-        lastname = "lastname: " + form;
-        username = "username: " + form;
-        document.write(nome + "name" + lastname + "\nlastname" + username + "\nusername");
-        */
-       console.log(element);
+    for (const element of campiObbligatori) {
+
+        function validaObbligatori(field) {
+            const input = document.getElementById(field).value;
+            if (input == "") {
+                document.getElementById(field).innerHTML = "Campo Obbligatorio";
+            } else {
+                document.getElementById(field).innerHTML = "";
+            }
+        }
+        validaObbligatori(element);
     }
 
-    
     form.addEventListener('submit', e => {
-    e.preventDefault(); //previene l'azione submit de default
+        e.preventDefault(); //previene l'azione submit de default
 
-    alert("name")
-
+        alert("name")
     });
 });
 
-function validaObbligatori(field) {
-    const input = document.getElementById(field).value;
-    if(input==""){
-        document.getElementsById(field).innerHTMl = "Campo Obbligatorio";
-    }else{
-        document.getElementsById(field).innerHTMl = "";
-    }
-}
-
 //Intercetta l'invio del form
-
-
 /*
-
 function submitForm() {
 
     var name = document.getElementById('name').value;
