@@ -25,17 +25,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-//Intercetta l'invio del form
-/*
-function submitForm() {
+//dark-light mode
+let nightMode = false;
 
-    var name = document.getElementById('name').value;
-    var lastname = document.getElementById('lastname').value;
-    var username = document.getElementById('username').value;
-    var city = document.getElementById('city').value;
-    var email = document.getElementById('email').value;
-    var tel = document.getElementById('tel').value;
-
+function toggleNightMode() {
+    const body = document.body;
+    nightMode = !nightMode;
     
-    alert('Name: ' + name + '\nLastname: ' + lastname + '\nUsername: ' + username + '\nCity' + city + '\nEmail' + email + '\nTel' + tel );
-}*/
+    // Aggiunge o rimuove la classe 'night-mode' dal body
+    body.classList.toggle('night-mode', nightMode);
+    
+    // Cambia il testo del pulsante in base alla modalità
+    const buttonText = nightMode ? 'Disattiva Modalità Notte' : 'Attiva Modalità Notte';
+    document.querySelector('.toggle-button').innerText = buttonText;
+}

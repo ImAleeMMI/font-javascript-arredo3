@@ -1,6 +1,42 @@
-html{
+body{
     background-color: blueviolet;
     font-family: 'Courier New', Courier, monospace;
+    transition: 1.5s ease, color 1.5s ease;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.night-mode {
+    background-color: #333;
+    color: #d3cfca;
+}
+
+.night-mode .container {
+    background-color: #333;
+    border: 2px solid #61008C;
+    border-radius: 5px;
+    transition: 1s ease, color 1s ease;
+}
+
+.night-mode input {
+    background-color: #333;
+    color: #d3cfca;
+    transition: 1s ease, color 1s ease;
+}
+
+.night-mode input::placeholder {
+    color: #d3cfca;
+    transition: 1s ease, color 1s ease;
+}
+
+.night-mode .submit{
+    border: 2px solid #61008C;
+    border-radius: 2px;
+    transition: 1s ease, color 1s ease;
 }
 
 .title {
@@ -49,3 +85,4 @@ input::placeholder {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
+
